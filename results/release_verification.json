@@ -1,0 +1,77 @@
+{
+  "python": "3.11.16",
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4",
+  "device": "CPU",
+  "checks": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "passed": true,
+      "output": "test_dense_knots (test_model.ModelTests.test_dense_knots) ... ok\ntest_metric_masks (test_model.ModelTests.test_metric_masks) ... ok\ntest_native_and_cv_preservation (test_model.ModelTests.test_native_and_cv_preservation) ... ok\ntest_original_reference_parity (test_model.ModelTests.test_original_reference_parity) ... ok\ntest_reject_bad_probabilities (test_model.ModelTests.test_reject_bad_probabilities) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.243s\n\nOK\n"
+    },
+    {
+      "command": [
+        "examples/synthetic_demo.py"
+      ],
+      "passed": true,
+      "output": "Output: (3, 12, 16, 2) native modes exactly preserved: True\nMax conditional change vs CV: 0.4171581268310547\n"
+    },
+    {
+      "check": "original planning bridge 10Hz CPU parity",
+      "max_abs_error_m": 4.76837158203125e-07,
+      "passed": true
+    },
+    {
+      "check": "scripts/train_cache.py synthetic CPU smoke",
+      "passed": true
+    },
+    {
+      "check": "scripts/evaluate_npz.py synthetic CPU smoke",
+      "passed": true
+    }
+  ],
+  "checkpoint_metadata": {
+    "anchor.pt": {
+      "top_level_keys": [
+        "anchor",
+        "correction",
+        "variant",
+        "step"
+      ],
+      "scalar_metadata": {
+        "variant": "direct",
+        "step": 600
+      }
+    },
+    "five.pt": {
+      "top_level_keys": [
+        "state",
+        "scale"
+      ],
+      "scalar_metadata": {
+        "scale": 0.5
+      }
+    },
+    "eight.pt": {
+      "top_level_keys": [
+        "state",
+        "scale",
+        "step",
+        "fold"
+      ],
+      "scalar_metadata": {
+        "scale": 1.0,
+        "step": 600,
+        "fold": 0
+      }
+    }
+  },
+  "note": "Synthetic checks are not new dataset evaluation evidence."
+}

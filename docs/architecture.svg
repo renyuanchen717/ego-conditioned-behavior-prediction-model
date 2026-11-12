@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#526175"/></marker></defs>
+<rect width="1100" height="440" fill="#fff"/>
+<g font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#17283d">
+<text x="550" y="32" font-size="24" font-weight="bold">Recorded K=12: native modes + conditional residual proposals</text>
+<rect x="20" y="90" width="165" height="70" rx="12" fill="#edf2f8"/><text x="102" y="120">History + map</text><text x="102" y="143">External backbone input</text>
+<rect x="220" y="85" width="175" height="80" rx="12" fill="#dcebf8"/><text x="307" y="118" font-weight="bold">Frozen NDPNet</text><text x="307" y="145">6 means + probabilities</text>
+<rect x="435" y="85" width="195" height="80" rx="12" fill="#dcebf8"/><text x="532" y="118">Original 6 modes</text><text x="532" y="145">Exactly unchanged</text>
+<rect x="220" y="225" width="175" height="80" rx="12" fill="#edf2f8"/><text x="307" y="258">CV ego reference</text><text x="307" y="283">Supplied ego plan</text>
+<rect x="435" y="205" width="195" height="130" rx="12" fill="#e1f2e8"/><text x="532" y="233" font-weight="bold">Learned residuals</text><text x="532" y="264">CV anchor</text><text x="532" y="290">5s response head</text><text x="532" y="316">8s response head</text>
+<rect x="680" y="225" width="180" height="80" rx="12" fill="#e1f2e8"/><text x="770" y="258">6 conditional</text><text x="770" y="283">proposals</text>
+<rect x="905" y="135" width="175" height="130" rx="12" fill="#f5ead5"/><text x="992" y="170" font-weight="bold">Concatenate</text><text x="992" y="200">12 trajectories</text><text x="992" y="232">per target</text>
+<text x="550" y="390" font-size="17">No Impact Router · No K=6 compression · No learned 12-mode probabilities</text>
+<text x="550" y="418" font-size="15">Recorded future in diagnostics; candidate ego trajectory in planning.</text>
+</g>
+<g fill="none" stroke="#526175" stroke-width="2" marker-end="url(#arrow)">
+<path d="M185 125 H220"/><path d="M395 125 H435"/><path d="M307 165 V185 H460 V205"/>
+<path d="M395 265 H435"/><path d="M630 265 H680"/><path d="M630 125 H992 V135"/>
+<path d="M860 265 H885 V235 H905"/>
+</g></svg>
