@@ -12,6 +12,7 @@ def save_json(p,x):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--cache',required=True);p.add_argument('--output',required=True);p.add_argument('--config',default='configs/interaction_k12.yaml')
     p.add_argument('--variant',choices=['B','C','D','E'],default='D');p.add_argument('--device',default='cuda:0');p.add_argument('--seed',type=int,default=0);p.add_argument('--epochs',type=int);p.add_argument('--batch-size',type=int);p.add_argument('--overfit-groups',type=int,default=0);p.add_argument('--overfit-steps',type=int,default=0);p.add_argument('--lambda-disp',type=float)
+    p.add_argument('--num-workers',type=int,default=0)
     a=p.parse_args();torch.set_num_threads(2);torch.manual_seed(a.seed);np.random.seed(a.seed);random.seed(a.seed)
     cfg=json.loads(Path(a.config).read_text());cfg['model']['use_plan']=a.variant!='B';cfg['model']['post_interaction']=a.variant!='C'
     if a.variant=='E':cfg['training']['lambda_disp']=0.
@@ -50,8 +51,10 @@ def main():
             if s%25==0:save_json(out/'progress.json',{'phase':'tiny_overfit','step':s,'loss':value,'elapsed_s':time.time()-start})
         after=evaluate(model,loader,a.device);save_json(out/'overfit.json',{'before':before,'after':after,'steps':len(history),'history_first':history[:3],'history_last':history[-3:],'heldout':False})
         torch.save({'model':model.state_dict(),'identity':identity},out/'last.pt');save_json(out/'progress.json',{'phase':'complete','scope':'tiny_overfit','steps':len(history)});print('Tiny overfit complete',flush=True);return
-    tl=DataLoader(train,batch_size=cfg['training']['batch_size'],shuffle=True,collate_fn=collate,num_workers=0)
-    vl=DataLoader(val,batch_size=cfg['training']['batch_size'],shuffle=False,collate_fn=collate,num_workers=0)
+    identity['num_workers']=a.num_workers;save_json(out/'identity.json',identity)
+    worker_options=dict(num_workers=a.num_workers,persistent_workers=a.num_workers>0,pin_memory=a.device.startswith('cuda'))
+    tl=DataLoader(train,batch_size=cfg['training']['batch_size'],shuffle=True,collate_fn=collate,**worker_options)
+    vl=DataLoader(val,batch_size=cfg['training']['batch_size'],shuffle=False,collate_fn=collate,**worker_options)
     for epoch in range(1,cfg['training']['epochs']+1):
         epoch_losses=[]
         for batch in tl:

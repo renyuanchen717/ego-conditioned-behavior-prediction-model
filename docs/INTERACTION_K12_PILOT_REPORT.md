@@ -33,7 +33,7 @@ B=history-only; C=plan without post-conditioning interaction; D=full; E=D withou
 4. Direct xy decoding has a serious motion-quality limitation in this small pilot: about 89.95% of sampled new-proposal acceleration points exceed the diagnostic 15m/s² threshold for D seed 0. This includes nonwinning proposals and is not a collision/safety evaluation. Increasing displacement weight to five worsens coverage and produces much more duplicate output; it is not a solution established by this pilot.
 5. D without displacement has better new-only errors but worse selected pool coverage. Pool loss/new loss and selection objectives must be reviewed separately rather than assuming any auxiliary loss is uniformly beneficial.
 6. On identical 2Hz knots, D seed 0 has ADE 0.35746 / FDE 0.87223 versus historical Recorded K12 0.35038 / 0.93859. These models have very different training exposure; this is an aligned diagnostic reference, not a controlled training comparison.
-7. A slight same-path ego time warp changes new proposals while preserving original modes. This proves a functional dependence only. Alternative traffic feasibility and causal response correctness are not certified.
+7. **Correction in v0.2.0:** the earlier time-warp diagnostic did not load the checkpoint weights. Its sensitivity result is withdrawn as evidence about the trained pilot. The diagnostic loader is fixed. A later recorded-plan-only gradient audit of the full-data selected checkpoints found input dependency in C/D on 64/64 validation scenes; this is not evidence of correct causal responses. Standard pilot training/validation metrics are unaffected.
 
 ## Tests and known limits
 

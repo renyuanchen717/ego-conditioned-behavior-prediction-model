@@ -7,6 +7,7 @@ from interaction_k12.data import SceneDataset,collate,model_inputs
 p=argparse.ArgumentParser();p.add_argument('--checkpoint',required=True);p.add_argument('--manifest',required=True);p.add_argument('--output',required=True);p.add_argument('--device',default='cpu');p.add_argument('--limit',type=int,default=10)
 a=p.parse_args();torch.set_num_threads(2)
 ck=torch.load(a.checkpoint,map_location='cpu',weights_only=True);model=InteractionK12(ck['identity']['config']['model']).to(a.device).eval()
+model.load_state_dict(ck['model'],strict=True)
 dataset=SceneDataset(a.manifest);rows=[]
 with torch.inference_mode():
  for j in range(min(a.limit,len(dataset))):

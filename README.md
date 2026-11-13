@@ -1,4 +1,15 @@
-# Ego-conditioned Behavior Prediction: Recorded K=12
+# Ego-conditioned Behavior Prediction
+
+## New: Direct D (v0.2.0)
+
+The fully trained **Direct D** checkpoint is available in [`checkpoints/direct_d`](checkpoints/direct_d). It adds six **direct** ego-conditioned proposals to six unchanged frozen NDPNet modes at **10 Hz**, without a CV reference or residual trajectory addition. This is a separate model from legacy Recorded K=12 below.
+
+- [Model card, input/output contract and final evaluation](docs/DIRECT_D_MODEL_CARD.md)
+- [Architecture and training objective](docs/INTERACTION_K12.md)
+- Run `python examples/direct_d_demo.py`; load weights with `from interaction_k12 import load_direct_d`.
+- No learned probabilities for the six new proposals; no NDPNet weights or dataset caches are included.
+
+## Legacy Recorded K=12 (v0.1.0)
 
 Recorded K=12 augments a **frozen NDPNet** with six ego-plan-conditioned trajectory proposals. It keeps the six original trajectories unchanged and returns a 12-trajectory pool for each prediction target.
 
