@@ -1,0 +1,34 @@
+{
+  "model": {
+    "hidden_dim": 128,
+    "heads": 4,
+    "dropout": 0.1,
+    "feature_dim": 128,
+    "use_plan": true,
+    "post_interaction": true,
+    "interaction_layers": 2,
+    "output_scale_m": 30.0
+  },
+  "training": {
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "gradient_clip": 2.0,
+    "batch_size": 4,
+    "epochs": 30,
+    "lambda_disp": 1.0,
+    "lambda_endpoint": 0.0,
+    "seeds": [
+      0
+    ],
+    "aggregation": "target mean within group, then group mean",
+    "selection": "validation 8s pool minADE"
+  },
+  "data": {
+    "history_frames": 11,
+    "future_steps": 80,
+    "dt": 0.1,
+    "max_context_agents": 0,
+    "max_map_tokens": 256,
+    "extractor_version": "interaction-scene-v1"
+  }
+}

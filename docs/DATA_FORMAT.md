@@ -1,29 +1,19 @@
-# Cache contract
+# Prepared model cache
+Data are not uploaded. Prepare an authorized local cache with train.jsonl and val.jsonl, each row containing `path`, `scene_id`, `split_group_id`, `backbone_hash`. Paths refer to local `.pt` samples loaded with `weights_only=True`.
+A = all retained current context agents; M = up to 256 map tokens. All times use 10 Hz. History has 11 observed states; future has 80 steps. Preserve original prediction targets and validity masks; do not pad missing history as valid.
 
-The portable package operates on predictions from a separately installed, frozen NDPNet. It does not convert raw WOMD TFRecords or nuPlan DBs by itself.
-
-Each row represents one prediction target and one conditioning ego in a shared scene. Preserve the target/conditioning identities and current timestamp in your private preprocessing metadata. Do not pass target GT into inference.
-
-| NPZ field | Shape | Meaning |
+| Input | Shape per scene | Meaning |
 |---|---|---|
-| `n` | N×6×16×2 | Native frozen NDPNet trajectory means at 0.5,...,8s |
-| `q` | N×6 | Normalized native probabilities (not logits) |
-| `typ` | N | WOMD type: vehicle=1, pedestrian=2, cyclist=3 |
-| `cv` | N×16×2 | Ego CV trajectory in the target-local frame |
-| `rec` | N×16×2 | Recorded/candidate ego trajectory in the same frame |
-| `y` | N×16×2 | Target future GT; training/evaluation only |
-| `v` | N×16 | Valid GT mask |
-| `sid` | N | Original scene ID as a Unicode array; training split checks |
+| native | A,6,80,2 | Frozen NDPNet means in each target-local frame |
+| native_prob | A,6 | Frozen native probabilities |
+| agent_features | A,128 | Frozen current agent embeddings |
+| map_features | M,128 | Frozen map embeddings |
+| origin, velocity | A,2 | Scene-frame position / velocity |
+| yaw, types | A | Local-frame heading / agent type |
+| history_mask | A,11 | Observed history mask |
+| ego_plan | 80,2 | Supplied conditioning future in scene axes |
+| map_position, map_yaw | M,2 and M | Map geometry in scene axes |
+| gt, future_valid | A,80,2 and A,80 | Training labels in target-local coordinates |
 
-Use float32 for geometry and probabilities. Repeated scene IDs are expected when a scene supplies multiple targets, but all such rows must stay in the same split. Each agent-local transform uses its current center and yaw. With row-vector coordinates:
-
-```python
-R = [[cos(yaw), -sin(yaw)], [sin(yaw), cos(yaw)]]
-local_xy = (world_xy - target_current_xy) @ R
-```
-
-Transform native predictions, ego plans and GT consistently. Convert heading-aligned NDPNet output only once. At 10 Hz, select future indices 4,9,...,79, corresponding to 0.5,1.0,...,8.0s; do not confuse these with indices of an array containing the current state.
-
-Frozen NDPNet's native configuration uses 1s observed history; the residual API does not add history to it. Full recorded ego future must be valid for the offline conditional protocol. Exclude unreliable conditioning inputs; mask invalid target futures only in supervised losses/metrics. Do not zero-pad missing conditioning future and present it as observed data.
-
-Scene mapping, valid-mask generation, native NDPNet graph construction, target selection and official dataset access remain the responsibility of the external preprocessor. A generic cache evaluator cannot reproduce the reported scenario population unless these rules, exclusions and split manifests also match.
+Other required fields are defined in `interaction_k12.model.INPUT_KEYS`; label fields never enter model forward. See `examples/direct_d_demo.py` for every input. `current_valid` marks the target state at t=0. Scene/root IDs, not augmented sample IDs, determine leakage checks. Non-SDC influencer augmentation changes conditioning ego while preserving scene split.
+`build_scene_cache.py` supports factual native-SDC records; `convert_m2i_memory.py` supports prepared influencer contexts. These converters require licensed source records and matching frozen-feature inputs; this release does not claim to reconstruct the private curated index from WOMD alone.

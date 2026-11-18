@@ -11,7 +11,7 @@ def synthetic_inputs():
 
 def main():
  torch.set_num_threads(2)
- model=load_direct_d(Path(__file__).resolve().parents[1]/'checkpoints/direct_d')
+ model=load_direct_d(Path(__file__).resolve().parents[1]/'checkpoints/d_m2i')
  x=synthetic_inputs()
  with torch.inference_mode():out=model(x)
  assert out['pool'].shape==(1,4,12,80,2) and torch.isfinite(out['pool']).all()

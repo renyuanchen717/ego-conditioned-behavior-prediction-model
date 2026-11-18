@@ -1,0 +1,13 @@
+{
+  "model": "D_m2i",
+  "checkpoint": "model.pt",
+  "sha256": "5444fdd24aee553991a7a97982b2bba6748cafc9fc6eaabbaacce54125c0b595",
+  "source_checkpoint_sha256": "a9ced3c8520b38e25b395bdbffe22f314ef098ac53348c2fec5955e8cef509fd",
+  "epoch": 26,
+  "seed": 0,
+  "training_samples": 61975,
+  "validation_samples": 7776,
+  "backbone_checkpoint_sha256": "c437f3148045b6391a030104bf16005e2d41bee2bb208382fe44fed62413335a",
+  "optimizer_included": false,
+  "tensors_verified_identical": true
+}

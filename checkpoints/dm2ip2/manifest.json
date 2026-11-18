@@ -1,0 +1,6 @@
+{
+  "checkpoint": "model.pt",
+  "sha256": "10d2b084db4982f23e5f5c419cc464b84201af5d3e5860d328f18db94caf8323",
+  "source_sha256": "4d881268d5553d6f09fb2e519431d1e771becf88b863c86046ecccfcbe9f187d",
+  "epoch": 2
+}

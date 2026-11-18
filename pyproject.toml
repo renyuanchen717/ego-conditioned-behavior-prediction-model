@@ -2,9 +2,9 @@
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 [project]
-name = "recorded-k12"
-version = "0.2.0"
-description = "Frozen NDPNet with Recorded K12 residual or Direct D ego-conditioned proposals"
+name = "dm2i-behavior-prediction"
+version = "0.3.0"
+description = "Frozen NDPNet with D_m2i conditional proposals and Flow Planner integration"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.2", "numpy>=1.24"]
 [tool.setuptools.packages.find]

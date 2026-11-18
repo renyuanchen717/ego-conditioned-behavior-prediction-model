@@ -1,0 +1,362 @@
+Official source: https://waymo.com/open/terms/
+Retrieved for this release.
+
+Waymo Dataset License Agreement for Non-Commercial Use (March 2025)
+To aid the research community in making advancements in machine perception and autonomous driving technology, Waymo has opened up to the public a curated set of autonomous driving data that can be used for research. The dataset, located at waymo.com/open, is made available free of charge, but under the terms and conditions below. The dataset contains lidar and camera data, which were collected in diverse conditions, modified to respect individuals’ privacy, and labeled and formatted to aid in research. We hope you find it useful.
+By downloading or using the Dataset, You are agreeing to the following terms and conditions (“Terms"):
+“Dataset" means the Waymo Open Dataset available at waymo.com/open and any data in the Waymo Open Dataset.
+“Derivative IP" means any derivative work of the Dataset; any other work made or developed using the Dataset, including any machine-learning model, software, or algorithm, including architectures, weights, and parameters, that have been trained, refined, or tuned, in whole or in part, using the Dataset (or new datasets or outputs generated therefrom); and any invention conceived or reduced to practice, directly or indirectly, through the use of the Dataset.
+“Non-commercial Purposes" means research, teaching, scientific publication and personal experimentation. Non-commercial Purposes include use of the Dataset to perform benchmarking for purposes of academic or applied research publication. Non-commercial Purposes does not include purposes primarily intended for or directed towards commercial advantage or monetary compensation, or purposes intended for or directed towards litigation, licensing, or enforcement, even in part.
+“Production Systems" means computer, network, and datacenter infrastructure, and other systems primarily intended to provide a product or service to customers or other third parties, even if no monetary compensation is received for such a service.
+“Waymo" means Waymo LLC.
+“You" means the individual or entity exercising the rights granted under this License Agreement.
+Waymo grants You a non-exclusive, royalty-free, personal license to use, reproduce, and modify the Dataset for Non-commercial Purposes only and expressly subject to the following conditions:
+Attribution
+: You must provide one of the following attributions in any Derivative IP: This [type of work, e.g., publication, software, model] was made using the Waymo Open Dataset, provided by Waymo LLC under the Waymo Dataset License Agreement for Non-Commercial Use, available at
+waymo.com/open/terms
+, and your access and use of such work are governed by the terms and conditions therein.
+@misc{waymo_open_dataset, title = {Waymo Open Dataset: An autonomous driving dataset}, website = {\url{https://www.waymo.com/open}}, year = {2019-2025} }
+Sharing
+: Subject to these Terms, you may share as follows:
+De Minimis
+: You may publish small extracts of data taken from the Dataset for purposes of illustration in Your research publications;
+Dataset Community Distribution Only
+: You may distribute the Dataset and copies and modifications thereof, but only if (i) distribution is limited to those who have registered at waymo.com/open and agreed to these Terms and (ii) You agree not to prepare, initiate, assert, or otherwise support any claim against Waymo or any authorized licensee of the Dataset for violation of any of Your rights protecting the distributed work; and
+Model Architectures Non-commercial Distribution Only
+: You may publish, in whole or in part, trained model architectures, including weights and biases, developed using the Dataset, and their associated derivatives including new datasets generated therefrom (collectively, “Distributed WOD Models”), provided that You meet the following conditions:
+You must include a prominent notice to Your users or recipients stating that (x) Your Distributed WOD Models is released under this Agreement and (y) any further downstream use or modification of such Distributed WOD Models is subject to the Terms of this Agreement, including the non-commercial restrictions of Section 4.
+This Agreement shall apply to Your users or recipients with respect to the whole of Your Distributed WOD Models, and You may provide Your own copyright statement and add additional terms and conditions for Your Distributed WOD Models, provided that they do not conflict with the non-commercial restrictions of Section 4 and the Terms of this Agreement;
+You must give any third-party recipients of Your Distributed WOD Models a copy of this Agreement; and
+You must provide attribution in accordance with Section 1 (above).
+Privacy
+: You may not use the Dataset in any manner that violates applicable privacy laws.
+Additional Restrictions
+: To ensure the Dataset is only used for Non-commercial Purposes, You further agree to the following:
+You must not use or deploy the Dataset, any models trained on or refined using the Dataset, or the weights or biases from such trained models, in whole or in part, (i) in operation of a vehicle or to assist in the operation of a vehicle, (ii) in any Production Systems, or (iii) for any other primarily commercial purposes; and
+Upon use of any Distributed WOD Models for any purpose that is not a Non-commercial Purpose per Section 4(a), or is otherwise in breach of this Agreement, (i) any rights granted to you to create any Distributed WOD Models and any rights in the Distributed WOD Models, granted by You or Your recipients to third parties, shall be null and void ab initio; (ii) any rights granted under this Agreement or the license or legal agreement governing use and/or distribution of the Distributed WOD Models to any third party recipient is terminated automatically; (iii) such third party recipient of Your Distributed WOD Models shall cease use of and delete the Dataset and the Distributed WOD Models, and any copies thereof; and (iv) the license granted in Section 5(b) of this Agreement immediately becomes effective.
+Limited Non-Assert
+: In consideration for access to this Dataset and/or this royalty-free license from Waymo, You (also on behalf of Your successors and assignees of any rights protecting Your Derivative IP) (a) agree not to prepare, initiate, assert, or otherwise support any claim against Waymo or any of its affiliates, successors, or assignees, for infringement, misappropriation or other violation of any rights protecting Your Derivative IP, and (b) grant Waymo and the other parties in (a) above a license to such rights, with such license becoming effective only if You breach the obligations of Section 5(a) or Section 4(b).
+Website Terms
+: You agree to the Waymo Terms of Service (https://waymo.com/terms/) (“ToS") in connection with your use of the Dataset and Waymo’s website, including Sections 9 Indemnification, 10 Disclaimers, and 11 Limitation of Liability.
+ADDITIONAL DISCLAIMER AND LIMITATION OF LIABILITY
+: YOU AGREE THE DATASET AND ANY DERIVATIVE IP IS PROVIDED “AS-IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL WAYMO AND THE OTHER WAYMO PARTIES, AS DEFINED IN THE TOS, BE LIABLE UNDER ANY LEGAL THEORY WITH RESPECT THE DATASET AND ANY DERIVATIVE IP, OR YOUR USE OF THE DATASET OR ANY DERIVATIVE IP, FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, PUNITIVE, OR SPECIAL DAMAGES OR LOST PROFITS.
+Waymo reserves all rights not expressly granted. If you would like a license that allows commercial use of the Dataset, or have any other questions, please contact open-dataset@waymo.com.
+If You fail to comply with these terms, then any rights granted to You hereunder terminate automatically and You agree to remove access to and delete the Dataset.
+If the institution You identify at registration or another entity exercises the rights granted under this License Agreement by virtue of Your download or use of the Dataset, You represent and warrant that: (a) You are authorized to agree to this license agreement on behalf of the entity or (b) You have confirmed that a person with authority to agree to this license agreement on behalf of the entity has already registered on behalf of the entity.
+Official Challenge Rules
+WAYMO OPEN DATASET CHALLENGES 2025
+OFFICIAL RULES
+Important:  Please read these Official Rules before participating in the challenges (the “
+WOD
+Challenges
+”) or submitting to a Challenge leaderboard.
+Contact us if you have questions about eligibility at
+open-dataset@waymo.com
+.
+In order to be eligible to participate in the WOD Challenges, You must agree to be bound by these Official Rules by visiting
+https://waymo.com/open/challenges/terms/
+and indicating Your agreement to these Official Rules, and You must satisfy all of the eligibility and other requirements below.
+Submissions from entrants that are ineligible to participate (i.e., win an award) in the WOD Challenges (e.g., because the Submission was received outside of the challenges period, the team does not comply with all eligibility requirements, etc.) may still appear on the leaderboard, however, they will be disregarded for the purposes of Sponsor identifying a potential winner.
+No purchase is necessary to participate in the WOD Challenges. The WOD Challenges are subject to applicable federal, state, provincial, and local laws, rules, and regulations and is void where prohibited or restricted by law.
+Each entrant is responsible for confirming that their participation is not prohibited by applicable laws, rules, regulations, or affiliated entity terms, rules, or policies prior to participating in the WOD Challenges.
+“You” means the individual or entity participating in the WOD Challenges.
+Eligibility: To be eligible to participate in and receive an award in the WOD Challenges, You (as an Independent (defined below) or member of a Team (defined below)) must:
+At the time of entry be at least 18 years old (or the age of majority in the jurisdiction where you reside, whichever is older);
+Not be an individual on the U.S. Department of Treasury’s Office of Foreign Assets Control (OFAC) Specially Designated Nationals and Blocked Persons List or otherwise under sanction by OFAC (or an immediate family member (spouses, parent, child, sibling, grandparent, and “step” child, wherever they may live) of such an individual) or be employed by or affiliated with an entity sanctioned by OFAC;
+Not be an individual, employee, or agent of an entity, to whom the export or transfer of software or technology would be prohibited by their inclusion on the U.S. Department of Commerce's Bureau of Industry and Security's Entity List or another restricted party list issued by the U.S. government;
+Not be a resident of Brazil, Quebec, Italy or any country, state, province, or territory subject to comprehensive OFAC sanctions, including Cuba, Iran, North Korea, Syria, Russia, Belarus, or the regions of Crimea, Donetsk or Luhansk of Ukraine;
+Not be: (1) a resident of a US embargoed country, (2) ordinarily resident in a US embargoed country, or (3) otherwise prohibited by applicable export controls and sanctions programs from participating and/or receiving an award in the WOD Challenges;
+Not be an employee or official of a federal, state, provincial, or local government body or agency except if (1) You are an employee of a state university or other government-affiliated educational institution; (2) You are not also employed by another federal, state, provincial, or local government body or agency that is not a state university or other government-affiliated educational institution; and (3) Your acceptance of an Award (defined below) does not violate any applicable law, rule, regulation, or policy related to the receipt of gifts.
+Not be an individual, employee, or agent of any company on the following list of Chinese Military Companies Operating in the United States:
+https://media.defense.gov/2024/Jan/31/2003384819/-1/-1/0/1260H-LIST.PDF
+; and
+Not be an individual, employee, or agent of an entity that is subject to a national security investigation by the US government.
+For (b), (c), (d) and (e) above, the list of sanctioned and embargoed countries and parties can change, so visit
+https://www.trade.gov/consolidated-screening-list
+to find a current list of sanctioned countries and parties and more information).  In addition, Your eligibility to enter the WOD Challenges and/or to receive an award for your participation in the WOD Challenges may be or become restricted or prohibited by U.S. banking system, OFAC or other sanctions, or other applicable laws, rules, regulations, or policies in place at the time of such entrance or potential distribution of an award.  If your ability to receive an award becomes, in Sponsor’s discretion, so restricted, prohibited, or infeasible prior to or after your entrance into the WOD Challenges, you will not be eligible to receive an award and may, in Sponsor’s discretion, be disqualified.
+Directors, officers, members, managers, and employees of Waymo LLC (“
+Sponsor
+”) and its parent companies, affiliate companies, subsidiaries, agents, professional advisors, advertising, promotional, public relations, and fulfillment agencies, consultants, legal counsel, website providers, webmasters, and immediate family members (spouses, parent, child, sibling, grandparent, and “step” child, wherever they may live) of each are not eligible to receive an award in the WOD Challenges.  To be eligible to receive an award in the WOD Challenges, entries must be completed and received by Sponsor in the manner and format designated below.
+IF YOU DO NOT MEET ALL OF THESE REQUIREMENTS OR ANY OTHER ELIGIBILITY REQUIREMENTS IN THESE OFFICIAL RULES, YOU WILL NOT BE ELIGIBLE TO RECEIVE AN AWARD IN THE WOD CHALLENGES, REGARDLESS OF YOUR POSITION ON THE LEADERBOARD.  BY PARTICIPATING IN THE WOD CHALLENGES OR OTHERWISE USING THE WOD CHALLENGES RESOURCES, MATERIALS, AND/OR SERVICES, INCLUDING BUT NOT LIMITED TO PUBLISHING TO THE LEADERBOARD, YOU AGREE TO BE BOUND BY THE OFFICIAL RULES, INDEPENDENT OF YOUR ELIGIBILITY TO PARTICIPATE IN THE WOD CHALLENGES.  IF YOU DO NOT AGREE TO THE OFFICIAL RULES, YOU MAY NOT PARTICIPATE IN THE WOD CHALLENGES OR OTHERWISE USE THE WOD CHALLENGES RESOURCES, MATERIALS, OR SERVICES.
+Challenges Period:
+The WOD Challenges start at 12:00:01 p.m. Pacific Time (“
+PT
+”) on March 31, 2025 and end at 11:59:00 p.m. PT on May 22, 2025
+(the “
+Challenges Period
+”). All Submissions (defined below) must be received by Sponsor in the manner designated below between 12:00:01 p.m. PT on March 31, 2025 and 11:59:00 p.m. PT on May 22, 2025
+(the “
+Submission Period
+”) and meet all other requirements in these Official Rules to be eligible to win an award.
+How to Enter:
+Each Challenge (defined below) requires You to train machine learning models to accomplish various tasks and then submit their inference results for evaluation and placement on the leaderboard.
+To enter, complete the following steps during the Submission Period:
+Step 1 (Registration)
+: (i) Log-in or create a Google account at
+www.accounts.google.com
+(creating a Google account is free); (ii) while logged into Your Google account, visit
+www.waymo.com/open
+and indicate Your agreement to the Waymo Dataset License Agreement for Non-Commercial Use (“
+Waymo Dataset License
+”) to obtain access to the Dataset for the WOD Challenges (located at
+http://waymo.com/open/challenges
+) (“
+WOD
+Challenges Site
+”); and (iii) while logged into Your Google account, visit
+https://waymo.com/open/challenges/terms/
+and indicate Your agreement to these Official Rules (“
+Registering
+” for the WOD Challenges).
+If You are on a Team (defined below),
+each
+member of the Team must individually complete Step 1 to Register for the WOD Challenges
+.
+Step 2
+(Inference)
+: Create and train a machine learning model to solve one of the four tasks posted at the WOD Challenges Site (each a “
+Challenge
+”) using the Waymo Open Dataset at
+http://waymo.com/open
+(the “
+Waymo Open Dataset
+”).
+Note
+: The challenge as a whole is referred to as the “WOD Challenges” and each of the four tasks posted at the WOD Challenges Site is referred to as a “Challenge”.  Sponsor has made three datasets available on the Waymo Open Dataset site: the Perception Dataset, the Motion Dataset, and the End-to-End Dataset. Within each dataset, there is a Training, Validation, and Test Set. The Training and Validation Sets both have labels that You can use to train Your machine learning model (the Test Set ground truths will not be made available). You will run Your trained machine learning model on the Test Set to create Your own labels for the Test Set. You will then package those labels along with what is required in the Submission Guidelines and Restrictions section below and in the format specified at
+https://waymo.com/open/challenges/
+(an “
+Entry File
+”).
+Step 3
+(Submission)
+: Upload Your Entry File(s) to our Evaluation Server at
+http://waymo.com/open/challenges
+(“
+Evaluation Server
+”) for the appropriate Challenge. Each Entry File must have a method name. Uploading a new Entry File with the same Google account and method name as a previous Entry File will overwrite the previous Entry File. Try to avoid using the same method name as methods from other entrants listed on the leaderboard. Do not submit multiple Entry Files for the same method with different object types. Instead, You should combine them into one Entry File.
+By participating in the WOD Challenges, submitting anything to the leaderboard, or submitting (or being a member of a Team whose Team Leader (defined below) submits) an entry as instructed above (a “
+Submission
+”), You represent and warrant that: (i) You authorize the Submission and expressly agree to these Official Rules; (ii) the Submission complies with the Waymo Dataset License at
+https://waymo.com/open/terms/
+; (iii) the Submission complies with these Official Rules (including the Submission Guidelines and Restrictions below) and any additional requirements on the WOD Challenges Site; (iv) the Submission does not violate any third-party rights, including copyrights, patents, trademark rights, trade secrets, or rights of privacy or publicity or contain unauthorized third-party trademarks or logos; (v) the Submission does not violate any applicable law, rule, policy, or regulation; (vi) any entity with which you are employed or affiliated (including as specified in the Submission, if applicable), and any other school and/or entity with which You are affiliated (if applicable), authorizes and does not prohibit or restrict Your participation in the WOD Challenges in any way; (vii) the Submission does not supply untruthful, incomplete, inaccurate or misleading information; and (viii) the Submission is Your original creation and is owned 100% by You, or, alternatively You have the full rights to grant the license and other rights that You grant to Sponsor in Section 10 below. Sponsor may choose to remove any Submission from the leaderboard or disqualify You from the WOD Challenges if it believes that Your Submission fails to conform with the terms of these Official Rules, the Waymo Dataset License, or the Guidelines and Restrictions below. Upon completion of all required entry steps and compliance with these requirements, You will automatically receive one entry into the WOD Challenges.
+Eligible participants may enter as one of the following categories of participants:
+Independent
+:  When entering as an individual unaffiliated with any Team (defined below) or entity (“
+Independent
+”), only the single individual is participating in the WOD Challenges.  The Independent must complete the entry process as instructed in these Official Rules.  The Independent will be required to sign the Declaration of Eligibility and Liability/Publicity Release and any other documents reasonably required by Sponsor (or Sponsor’s designee or affiliate) in order to be eligible to potentially win an award.
+Team
+:  A team is either (i) an individual employed by or otherwise affiliated with an entity participating in the WOD Challenges; or (ii)
+a group of no more than ten individuals
+, each of whom must meet all of the eligibility requirements in these Official Rules, and may include individuals employed by or otherwise affiliated with an entity participating in the WOD Challenges (Your “
+Team
+”
+).
+FOR CLARITY, IF ANY MEMBER OF A TEAM FAILS TO MEET ALL OF THE ELIGIBILITY REQUIREMENTS IN THESE OFFICIAL RULES (E.G., IS A RESIDENT OF A PROHIBITED JURISDICTION LISTED IN SECTION 1), THE ENTIRE TEAM WILL BE DISQUALIFIED FROM WINNING ANY AWARD.
+Each Team must have a designated team lead (“
+Team Leader
+”), who is authorized to and will submit the Team’s Submission(s) on behalf of any affiliated entity/ies and/or other Team members making the Submission.  If a Team is selected as a potential winner, each individual member of the Team will be required to sign the Declaration of Eligibility and Liability/Publicity Release and any other documents reasonably required by Sponsor (or Sponsor’s designee or affiliate) in order to be eligible to potentially win an award.
+Limits
+:
+An individual cannot be a member of more than one Team (or participate as an Independent and a member of a Team) for a single Challenge. An entity cannot be affiliated with more than one Team for a single Challenge, unless the entity is a qualifying academic entity (e.g., a university).
+For example, individual participant X may be on Team ABC for the Sim Agents Challenge and on Team DEF for the Scenario Generation Challenge, but may not also be on Team GHI for the Sim Agents Challenge. Each Independent or Team may have at most one account on the Evaluation Server.  Each Independent or Team may provide Submissions for as many or as few of the four Challenges as they would like.
+INDIVIDUALS OR TEAMS THAT DO NOT COMPLY WITH THESE RULES WILL BE DISQUALIFIED SO PLEASE CONTACT open-dataset@waymo.com IF YOU HAVE QUESTIONS ABOUT THE ELIGIBILITY OF YOUR TEAM BEFORE YOUR TEAM PARTICIPATES IN THE WOD CHALLENGES
+.  Submissions may be evaluated against the Test Set or Validation Set. Each Independent or Team may submit for evaluation against the Validation Set for each Challenge as many times as they like. However, Submissions evaluated against the Validation Set do not appear on the leaderboard and are not eligible for awards. Each Independent or Team may submit a Submission for evaluation against the Test Set up to three times per Challenge every 30 days
+(six times every 30 days for the Vision-based End-to-End Driving and Scenario Generation Challenges)
+during the Submission Period. If an Independent or Team is caught using multiple Google accounts for the purposes of circumventing this limit, Sponsor will remove such Independent’s or Team’s Submission and disqualify them from the WOD Challenges.
+Submission Guidelines and Restrictions
+For the Sim Agents Challenge, Submissions are serialized protobuffers (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/protos/sim_agents_submission.proto
+). Due to the large size of the submission protos, we recommend creating separate files for each shard in the test set. Our sample notebook (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/tutorial/tutorial_sim_agents.ipynb
+) demonstrates how to create submission protobuffers in this manner. Afterwards, tar and gzip these files into a .tar.gz file for uploading. To facilitate the upload of these files, we provide the user with a command used for the upload from the command line.
+For the Scenario Generation Challenge, Submissions are serialized protobuffers (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/protos/sim_agents_submission.proto
+). Due to the large size of the Submission protos, we recommend creating separate files for each shard in the test set. Our sample notebook (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/tutorial/tutorial_scenario_gen.ipynb
+) demonstrates how to create Submission protobuffers in this manner. Afterwards, tar and gzip these files into a .tar.gz file for uploading. To facilitate the upload of these files, we provide the user with a command used for the upload from the command line.
+For the Interaction Prediction Challenge, Submissions are serialized protobuffers (
+https://github.com/waymo-research/waymo-open-dataset/blob/5f8a1cd42491210e7de629b6f8fc09b65e0cbe99/src/waymo_open_dataset/protos/motion_submission.proto#L125
+). The protocol buffer file provides details on how to create the Submission proto. The Submission file must be tar and gzipped into a .tgz file to be uploaded to the server.
+For the Vision-based End-to-End Driving Challenge, Submissions are serialized protobuffers (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/protos/
+end_to_end_driving_submission
+.proto
+). It is recommended that creating separate files for each shard in the test set.  Our sample notebook (
+https://github.com/waymo-research/waymo-open-dataset/blob/master/waymo_open_dataset/tutorial/tutorial_vision_based_e2e_driving.ipynb
+) demonstrates how to create Submission protobuffers in this manner. Afterwards, tar and gzip these files into a .tar.gz file for uploading. To facilitate the upload of these files, we provide the user with a command used for the upload from the command line.
+For the Sim Agents, Scenario Generation, and Interaction Prediction Challenges, Submissions may not be created using any training/validation data other than the Waymo Open Dataset, except for pretraining models on one of the following datasets: ImageNet (http://www.image-net.org/), Coco (http://cocodataset.org/), andor Kitti (http://www.cvlibs.net/datasets/kitti/). Moreover, individuals or team participants may also use any public pre-trained models made available to the academic/research community.  Participants may augment or combine the public pretrained models with their own non-public model architectures or components, but such non-public architectures or components can only be trained on the allowed datasets specified herein.
+For the Vision-based End-to-End Driving Challenge, Submissions may be created using any public data made available to the academic/research community. Moreover, individual and team participants may also use any public pre-trained models made available to the academic/research community in combination with any non-public architectures or components beyond the publicly available ones, but such non-public architectures or components can only be further trained on publicly available data.  Data sources and training details must be disclosed for fair evaluation against other submissions.
+Submissions may not be created using any form of manual labeling.
+Each Submission must come from different models, rather than submitting results from the same model at different training epochs or with slightly different parameters.
+Written parts of entries must be in English to be eligible. The Submission must, at a minimum, support English language use.
+Submissions must also include: (a) the name and email address (used when Registering) of the Independent or names and email addresses (used when Registering) of each Team member making the Submission; (b) the school or other entity(ies) each Team member is affiliated with (if any); (c) a name for the Submission method (which Sponsor may use or request to be changed if it deems inappropriate in its sole discretion); (d) a short description of the method that can be published by the Sponsor, and (e) supporting code to enable evaluation through an automated evaluation server (if applicable). Failure to provide this information may result in disqualification.
+Entries are void if they are in whole or part illegible, incomplete, damaged, altered, counterfeit, obtained through fraud, or late.
+The top 100 Submissions will be displayed on the leaderboard for each Challenge on the WOD Challenges Site.
+SUBMISSIONS FROM ENTRANTS THAT ARE INELIGIBLE TO WIN AN AWARD IN THE WOD CHALLENGES (E.G., BECAUSE THE SUBMISSION WAS RECEIVED OUTSIDE OF THE CHALLENGES PERIOD, THE TEAM DOES NOT COMPLY WITH ALL ELIGIBILITY REQUIREMENTS, ETC.) MAY STILL APPEAR ON THE LEADERBOARD, HOWEVER, THEY WILL BE DISREGARDED FOR THE PURPOSES OF SPONSOR IDENTIFYING A POTENTIAL WINNER.
+Sponsor reserves the right to modify the leaderboard at its discretion for reasons of fairness, proper play, and/or compliance with these Official Rules, including, for example, if Sponsor believes that participants or entries shown on the leaderboard do not meet any eligibility or other requirements in these Official Rules
+.
+If participating in the WOD Challenges via Your mobile device (for which service may only be available via select devices and participating wireless carriers and is not required to enter), You may be charged for standard data use from Your mobile device according to the terms in Your wireless service provider’s data plan. Normal airtime and carrier charges and other charges may apply to data use and will be billed on Your wireless device bill or deducted from Your pre-paid balance. Wireless carrier rates vary, so You should contact Your wireless carrier for information on Your specific data plan.
+Identity of Participant:
+All Submissions must be submitted by the individual participant for an Independent entry, or the Team Leader for a Team entry. Bulk or automated entries will be disqualified (including entries made using any script, macro, bot, or promotional service). Multiple participants are not permitted to share the same email account. Any attempt to obtain additional entries through fraud, bots, or other illegitimate means will result in disqualification, at Sponsor’s discretion.
+If there is a dispute about the identity of the participant, entries will be declared made by the authorized account holder of the email address associated with the Independent’s or Team Leader’s account through which the Submission is made. An “
+authorized account holder
+” means the natural person who is assigned to an email address by an Internet access provider, online service provider or other organization (e.g., business, educational institution, etc.) that is responsible for assigning email addresses for the domain associated with the submitted email address. Each potential winner may be required to provide Sponsor with proof that the potential winner is the authorized account holder of the email account associated with the winning Submission.
+Selection and Notification of Winners:
+Winners will be selected as follows:
+Phase 1 Judging
+: On or about May 23, 2025, Sponsor will test each Submission against the evaluation code (“
+Judging Code
+”) for each Challenge. The Judging Code will attribute a score to each Submission, calculated from scores based upon the below criteria (a “
+Score
+”):
+Each Challenge will have one primary metric and one secondary (tie-breaking) metric associated with it. Submissions will be scored based on performance on the applicable primary metric shown in the table below.
+The metric values will be determined by the Judging Code, which will be accessible at
+https://github.com/waymo-research/waymo-open-dataset
+.
+The Independent or Team responsible for the top three scoring eligible Submissions for each Challenge will each be deemed a finalist (“
+Finalist
+”). In the unlikely event of a tie, the Finalist will be determined by the Submission’s performance on the applicable secondary tie-breaking metric shown in the table below (additional information about these metrics can be found on each Challenge’s respective page on the WOD Challenges Site).
+Challenge
+Primary Metric
+Tie-breaking Metric
+Filters
+Sim Agents
+Realism Meta-Metric
+minADE
+N/A
+Scenario Generation
+Realism Meta-Metric
+Kinematic Metrics
+N/A
+Interaction Prediction
+Soft-mAP
+minADE
+N/A
+Vision-based End-to-End Driving
+Rater Feedback Metric
+ADE
+N/A
+Phase 2 Finalist Technical Report Submission
+: Each Finalist (in the case of a Team, the Team Leader) will be notified via email on or about May 24, 2025.
+To be deemed a potential winner and qualify for winning an award, each Finalist (in the case of a Team, the Team Leader) must (i) by May 27, 2025, respond to Sponsor’s email request by agreeing to submit a detailed description of their Submission’s method in the form of a technical report (a “Technical Report”); and (ii) by May 31 , 2025, submit to Sponsor the Technical Report by email to open-dataset@waymo.com
+.  Technical Reports must be a PDF, 1-4 pages long, and contain enough information about the development of Your method to allow for reproducibility of Your Submission.  Technical Reports will be made public and should not contain any confidential information.  For questions about the necessary contents of Technical Reports, email open-dataset@waymo.com. Technical Reports must (a) not supply untruthful, incomplete, inaccurate or misleading information; and (b) be Your original creation and be owned 100% by You, or, alternatively You have the full rights to grant the license and other rights that You grant to Sponsor in Section 10 below.  On or about June 2, 2025, Sponsor will review all Technical Reports.  If the Technical Report (i) does not contain enough information to allow for reproducibility; or (ii) indicates that a Finalist may have cheated or that their Submission does not otherwise comply with these Official Rules, Sponsor may choose to remove the Submission or disqualify the Finalist from the WOD Challenges and select an alternate Finalist in accordance with the Judging Code.  Finalists whose Technical Reports comply with the above requirements and otherwise comply with these Official Rules will be deemed a Verified Finalist potential winner (“
+Verified Finalist
+”) and notified by Waymo via email on or about June 9, 2025.
+Odds of winning an award depend on the number and quality of eligible Submissions received. To the fullest extent permitted by applicable law, Sponsor may require each potential winner to sign and return, within seven days of being notified, an Affidavit of Eligibility and Liability/Publicity Release in order to claim their award. If (i) the attempted notification is returned as undeliverable without a forwarding address; (ii) any required documents are not returned within seven days, such as the Affidavit of Eligibility and Liability/Publicity Release; or (iii) if potential winner is otherwise unable to accept the award as stated, the award will be forfeited and will be awarded to an alternate eligible winner in accordance with the Judging Code. Only three alternate winners will be selected for each award.
+If, by reason of a print or other error (digital or otherwise), more awards are claimed than the number set forth in these Official Rules, the award(s) will be awarded to the Individual or Team with the highest scoring Submission in accordance with the above criteria from among all eligible claimants making purportedly valid claims to award the awards available.
+Verification of Potential Winners
+:
+EACH POTENTIAL WINNER IS SUBJECT TO VERIFICATION BY SPONSOR, WHOSE DECISIONS ARE FINAL AND BINDING IN ALL MATTERS RELATED TO THE WOD CHALLENGES.  A PARTICIPANT IS NOT AN AWARD WINNER UNLESS AND UNTIL PARTICIPANT’S ELIGIBILITY HAS BEEN VERIFIED AND PARTICIPANT HAS BEEN NOTIFIED THAT VERIFICATION IS COMPLETE AND NO FURTHER ACTION IS NEEDED. IF SPONSOR DETERMINES IN ITS DISCRETION THAT A POTENTIAL WINNER INDIVIDUAL’S, TEAM MEMBER’S, OR TEAM’S PARTICIPATION IN THE WOD CHALLENGES  (INCLUDING THROUGH THEIR ASSOCIATION WITH AN ENTITY) OR ACCEPTANCE OF AN AWARD MAY BRING DISREPUTE OR BE DETRIMENTAL TO SPONSOR (INCLUDING TO SPONSOR’S REPUTATION, BUSINESS RELATIONSHIPS OR OTHER COMPANY INTERESTS) OR WAS PROHIBITED OR RESTRICTED BY ANY APPLICABLE LAW, RULE, OR REGULATION; BY ANY APPLICABLE EMPLOYER’S OR EDUCATIONAL INSTITUTION’S TERMS, RULES, OR POLICIES; OR BY THESE OFFICIAL RULES, THEN THE INDIVIDUAL OR TEAM ASSOCIATED WITH SUCH POTENTIAL WINNER WILL BE DISQUALIFIED AND AN ALTERNATE POTENTIAL WINNER WILL BE SELECTED IN ACCORDANCE WITH THE JUDGING CODE.
+6. Award:
+Twelve Verified Finalists total will be selected to each receive a cash award. For each of the four Challenge Tasks, the Verified Finalist whose Submission receives the highest Score will be awarded $10,000 USD, the Verified Finalist whose Submission receives the second highest Score will be awarded $5,000 USD, and the Verified Finalist whose Submission receives the third highest Score will be awarded $3,000 USD.  Total value of all awards: $72,000 USD.
+Awards will not be awarded to any employer, educational institution, or other entity affiliated with a Verified Finalist.  Rather, (a) in the case of an Individual, awards will be awarded directly to the eligible Individual; and (b) in the case of a Team, awards will be awarded directly to the Team’s eligible Team Leader and that Team Leader will be solely responsible for dividing the award among the eligible members of their Team. In the case of a Team, the Team Leader must collect from their Team members and provide to Sponsor properly executed and completed tax forms, as appropriate, and such other forms, documents and information that Sponsor may reasonably request from the Team Leader or their Team members to confirm eligibility for an award and to comply with all applicable laws and Sponsor’s tax reporting and withholding obligations.
+Sponsor may choose in its discretion to invite select members of Verified Finalists to virtually present their Submission method at the Workshop on Autonomous Driving at CVPR 2025 on June 11, 2025 (
+https://cvpr2025.wad.vision/
+).
+Award Restrictions
+: ALL FEDERAL, STATE, PROVINCIAL, AND LOCAL TAXES ASSOCIATED WITH THE RECEIPT OR USE OF ANY AWARD ARE THE SOLE RESPONSIBILITY OF THE WINNER. Awards are not transferable. No substitutions or exchanges of any award (including for cash) will be permitted, except that Sponsor reserves the right to substitute an award of comparable or greater value for any award. Sponsor will not replace any lost or stolen awards. Only the number of awards stated in these Official Rules are available to be won in the WOD Challenges.
+7. Disclaimer:
+Sponsor and its parent companies, subsidiaries, affiliates, directors, officers, professional advisors, consultants, contractors, legal counsel, public relations firms, employees and advertising, fulfillment and marketing agencies (collectively, the “
+Released Parties
+”) will not be responsible for: (a) any late, lost, misrouted, garbled or distorted or damaged transmissions or entries; (b) phone, electronic, hardware, software, network, Internet, or other computer or communications-related malfunctions or failures beyond Sponsor or the Released Parties’ reasonable control; (c) any WOD Challenges disruptions, injuries, losses or damages caused by events beyond the reasonable control of Sponsor or the Released Parties, including related to coronavirus or any non-authorized human intervention; or (d) any printing or typographical errors in any materials associated with the WOD Challenges.
+8. Limitations of Liability; Releases: By entering the WOD Challenges, You release Sponsor and all Released Parties from any liability whatsoever, and waive any and all causes of action, related to any claims, costs, injuries, losses, or damages of any kind arising out of or in connection with the WOD Challenges or delivery, misdelivery, acceptance, possession, use of or inability to use any award (including claims, costs, injuries, losses and damages related to rights of publicity or privacy, intellectual property, defamation or portrayal in a false light, whether intentional or unintentional), whether under a theory of contract, tort (including negligence), warranty or other theory.
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE SPONSOR OR THE RELEASED PARTIES BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF USE, LOSS OF PROFITS OR LOSS OF DATA, UNDER ANY LEGAL THEORY, WHETHER BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, WARRANTY, OR OTHERWISE, ARISING OUT OF OR IN ANY WAY CONNECTED TO YOUR PARTICIPATION IN THE WOD CHALLENGES OR USE OR INABILITY TO USE ANY SOFTWARE, HARDWARE, EQUIPMENT OR DATA PROVIDED FOR USE IN THE WOD CHALLENGES OR ANY AWARD, EVEN IF A RELEASED PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE RELEASED PARTIES (JOINTLY) ARISING OUT OF OR RELATING TO YOUR PARTICIPATION IN THE WOD CHALLENGES OR USE OF OR INABILITY TO USE ANY SOFTWARE, HARDWARE, EQUIPMENT, OR DATA PROVIDED FOR USE IN THE WOD CHALLENGES OR ANY AWARD EXCEED $10. THE LIMITATIONS SET FORTH IN THIS SECTION WILL NOT EXCLUDE OR LIMIT LIABILITY FOR THE RELEASED PARTIES’ GROSS NEGLIGENCE, INTENTIONAL MISCONDUCT, OR FOR FRAUD.
+9. Use of Name, Likeness, etc.:
+To the fullest extent permitted by applicable law, entry into the WOD Challenges (submitted by You or Your Team Leader) constitutes permission to use Your name, hometown, aural and visual likeness and award information for advertising, marketing, promotional, educational, and business purposes without further permission or compensation (including in a public-facing winner list). As a condition of being awarded any award, except where prohibited by law, each winner may be required to execute a consent to the use of their name, hometown, aural and visual likeness and award information for advertising, marketing, promotional, educational, and business purposes without further permission or compensation. By entering the WOD Challenges, You consent to being contacted by Sponsor for any purpose and by any means (including email and phone) in connection with the WOD Challenges.
+10. License to Submissions and Technical Reports
+: Upon participating in the WOD Challenges, submitting anything to the leaderboard, or submitting (or being a member of a Team whose Team Leader (defined below) submits) anything to the leaderboard, You grant to Sponsor a perpetual, irrevocable, royalty-free, worldwide, nonexclusive license under Your intellectual property rights to make, use, import, publish, reproduce, display, perform, distribute, adapt, edit, modify, translate, and create derivative works based upon Your Submission (including any docker image and supporting code, e.g., to enable automated evaluation) and Technical Report, or any portion thereof (including Your name and likeness as shown and conveyed in the Submission or Technical Report), and any works, products and services that incorporate the foregoing or combine the foregoing with other Submissions and Technical Reports, or portions thereof, in any manner, in connection with the WOD Challenges and for other advertising, marketing, promotional, commercial, and business, and educational purposes. For the avoidance of doubt, the license above includes the right for Sponsor to sell, offer for sale, or sublicense Sponsor’s works, products or services, even though such works, products, or services may combine, incorporate, or otherwise process Your Submission, Technical Report, and the intellectual property rights therein, in connection with the activities above.
+To the extent that there is a conflict between the foregoing license and the Waymo Dataset License, the foregoing license will control.  Aside from the potential awards defined in these Official Rules, You will not receive or be entitled to any compensation for any exercise of the rights above by the Sponsor, or its agents, licensees or assignees. Sponsor will have no obligation to publish, use or retain any Submission or Technical Report You submit, return any such Submission or Technical Report to You, or exercise any of the rights granted under these licenses.
+You agree that it is Your sole responsibility to obtain all permissions and releases necessary for the grant of the rights contained in this section. You agree to take, at Sponsor's expense, any further action (including execution of affidavits, tax forms, and other documents) reasonably requested by Sponsor to effect, perfect, or confirm Sponsor's rights as set forth above in this section.
+11. Privacy:
+See Sponsor’s Privacy Policy at
+www.waymo.com/privacy/
+.
+12. Winner List; Rules Request:
+For a copy of the winner list or to obtain a copy of these Official Rules, send a written request with a stamped, self-addressed, business-size envelope for arrival after June 20, 2025 and before June 20, 2026 to the address listed in Section 16 below, Attn: Waymo Open Dataset Challenges 2025.  VT residents may omit return postage.
+13. Intellectual Property Notice:
+WAYMO is a trademark of Waymo LLC.  The WOD Challenges and all accompanying materials are copyright © 2025 by Waymo LLC.  All rights reserved.
+14. Disputes:
+EACH PARTICIPANT AGREES THAT ANY DISPUTES, CLAIMS, AND CAUSES OF ACTION ARISING OUT OF OR CONNECTED WITH THE WOD CHALLENGES OR ANY AWARD AWARDED WILL BE RESOLVED EXCLUSIVELY BY THE UNITED STATES DISTRICT COURT FOR THE NORTHERN DISTRICT OF CALIFORNIA OR THE APPROPRIATE STATE COURT LOCATED IN SANTA CLARA COUNTY, CALIFORNIA. THESE OFFICIAL RULES ARE GOVERNED BY THE LAWS OF THE STATE OF CALIFORNIA, WITHOUT REGARD TO CHOICE OF LAW OR CONFLICT OF LAW RULES. YOU WAIVE ANY AND ALL OBJECTIONS TO JURISDICTION AND VENUE IN THESE COURTS AND HEREBY SUBMIT TO THE JURISDICTION OF THOSE COURTS.
+15. General Conditions:
+Participants agree to be bound by these Official Rules and by the decisions of Sponsor, which are final and binding in all respects. Sponsor reserves the right to change these Official Rules at any time, in its discretion, and to suspend or cancel the WOD Challenges or any Participant’s participation in the WOD Challenges should viruses, bugs, unauthorized human intervention or other causes beyond Sponsor's reasonable control affect the administration, security or proper play of the WOD Challenges, or Sponsor otherwise becomes (in its discretion) incapable of running the WOD Challenges as planned. Participants who violate these Official Rules, violate any law, rule or regulation in connection with participation in the WOD Challenges, tamper with the operation of the WOD Challenges or engage in any conduct that is detrimental or unfair to Sponsor, the WOD Challenges or any other Participant (as determined in Sponsor's discretion) are subject to disqualification from the WOD Challenges. Any attempt by a Participant or other individual to deliberately damage any website associated with the WOD Challenges or undermine the legitimate operation of the WOD Challenges may be in violation of criminal and civil law and Sponsor reserves the right to prosecute and seek damages from any such person to the fullest extent permitted by applicable law. Sponsor reserves the right to prohibit persons whose eligibility is in question or who have been disqualified or are otherwise ineligible to enter the WOD Challenges. Sponsor reserves the right to disqualify any entries received that contain inappropriate or offensive content. Sponsor’s failure to enforce any term of these Official Rules will not constitute a waiver of that provision. Any provision of these Official Rules deemed unenforceable will be enforced to the extent permissible, and the remainder of these Official Rules will remain in effect. The use of the terms “include” or “including” in these Official Rules is illustrative and not limiting.
+16. Sponsor:
+Waymo LLC, 1600 Amphitheatre Parkway, Mountain View, CA, 94043, USA.
+Citation
+When using this data, please cite the following:
+@misc{waymo_open_dataset,
+title = {Waymo Open Dataset: An autonomous driving dataset},
+website = {\url{https://www.waymo.com/open}},
+year = {2019}
+}
+Privacy
+Waymo takes reasonable care to remove or hide personally identifiable information (PII) including, but not limited to, faces of people and license plates of vehicles.
+If you would like us to modify or remove certain images from the Waymo Open Dataset, please complete the information below. This will help us evaluate your request.
+If you have any other privacy concerns, please contact us at
+open-dataset@waymo.com
+.
+Please enter the name of the file which contains the image you want to report (separate with commas if there are multiple).
+Tell us why you are reporting this image.
+Please provide your email address.
+Submit
+Something went wrong submitting this form.
+Thank you for your submission.
+Account
+If you would like to modify or delete your account information with Waymo Open Dataset, please submit your request to
+open-dataset@waymo.com
+with the subject ‘Account information’.
+FAQ
+Waymo for Business
+Blog
+Privacy Policy
+Research
+Terms
+Legal Requests
+Zero Tolerance
+First Responders
+Safety Publications
+Waymo Community
+Contact Us
+Waymo Help Center
+Sustainability
+Notice to California Residents
+Waymo Shop
+Sign up for updates to get the latest on Waymo.
+Sign up
+Select language
+English
+Español
+Filipino
+Italiano
+日本語
+中文（简体中文）
+中文（繁體中文）
+Do Not Sell or Share My Personal Information
+Waymo may disclose user personal information to third parties to tailor advertising and offers to your interests. Such disclosures may be considered “sales” or “sharing” of personal information under the laws described above. You may opt-out of these below. If you opt out, Waymo will not disclose your personal information to third parties for purposes of tailoring advertising or offers to your interests. Note that any choice you make here will
+only affect this website on this browser and device
+. To learn more about how your data is shared, view our
+Privacy Policy page
+.
+© 2019-2026 Waymo LLC
+We value your privacy
+Waymo and our third-party partners use cookies and similar technologies to ensure our website functions correctly, to analyze site traffic and performance, and to deliver personalized marketing and content. Essential cookies are automatically active to keep our site running safely and reliably.
+For non-essential cookies, below you can choose to accept all of them, reject all of them, or customize your preferences.
+You can change your preferences or withdraw your consent at any time by clicking "Cookie Settings" in the website footer. For more detailed information, please review our
+Privacy Policy
+.
+Accept All
+Reject All
+Manage Preferences
+Manage Preferences
+Strictly Necessary Cookies
+These cookies are essential for the website to function properly, enabling core features like network security, load balancing, and remembering your privacy preferences. They cannot be switched off in our systems.
+Analytics Cookies
+These cookies allow us and our analytics partners to count visits and traffic sources so we can measure and improve the performance of waymo.com. They help us understand which pages are most and least popular and see how visitors move around the site.
+Marketing & Advertising Cookies
+These cookies may be set through our site by us and our advertising partners. They may be used by us and those companies to build a profile of your interests and show you relevant advertisements on other websites and platforms.
+Functional & Personalization Cookies
+These cookies enable the website to provide enhanced functionality and personalization, such as remembering your language preferences or regional settings. If you do not allow these cookies, some or all of these services may not function properly.
+If you choose to "Reject All", we will only use strictly necessary cookies.
+Accept All
+Reject All
+Save Preferences

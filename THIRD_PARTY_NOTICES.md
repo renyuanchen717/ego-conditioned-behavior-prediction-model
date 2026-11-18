@@ -1,9 +1,6 @@
-# Attribution and distribution scope
+# Third-party and model distribution notices
+D_m2i weights and project materials derived from WOMD are distributed subject to the Waymo Dataset License Agreement for Non-Commercial Use; a full copy is included in licenses/WAYMO_DATASET_LICENSE.txt. Downstream use and modification must comply with it. No separate unrestricted license grant for project-authored code is made here.
 
-The pretrained NDPNet implementation and weights are external dependencies. Obtain them from https://github.com/HuaHu-yizhou/NDPNet and follow that project's license and checkpoint instructions. The local NDPNet checkout carries Apache License 2.0; its source and backbone checkpoint are not bundled here.
+The PDM source subtree in planning/vendor_pdm is copied from the BeTop planning tree (OpenDriveLab/BeTop, commit ad398d8dbca2a88c10b7e0248f14b64c5535b080), including the experiment's forecast-occupancy integration. It remains Apache-2.0, see its included LICENSE; upstream notices and source headers are retained. Local integration changes include predicted-agent occupancy support and scoring adapters. Cite BeTop and PDM/tuPlan Garage as appropriate.
 
-WOMD, nuPlan and InterHub datasets/caches are not included. Users must obtain data through the corresponding authorized sources and comply with their terms. Flow Planner, InterPlan, nuPlan devkit and PDM infrastructure are also separate dependencies, not relicensed by this package.
-
-The repository contains project-authored residual-model code, trained residual checkpoints and selected research reference scripts. No open-source license has been chosen for these materials yet. Public visibility is not a license grant. The owner should choose the code and weight license before advertising unrestricted reuse.
-
-The portable package does not claim to be the official release of NDPNet, Flow Planner, WOMD, InterHub or InterPlan. Please cite the relevant original works when using those components and cite this repository for its residual proposal implementation once a permanent public URL is available.
+Flow Planner is an external MIT-licensed dependency (DiffusionAD/Flow-Planner); source and weights are obtained from its official repository. NDPNet is an external Apache-2.0 dependency (HuaHu-yizhou/NDPNet); weights are not bundled. Follow their own model/data terms. InterPlan and nuPlan devkit are external, separately licensed dependencies. Do not infer that this release grants dataset rights.
